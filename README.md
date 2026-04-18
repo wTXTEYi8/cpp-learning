@@ -20,7 +20,7 @@ void hello() {
 }
 
 int main() {
-    hello();  // 関数を呼び出す
+    hello();
     return 0;
 }
 ```
@@ -29,7 +29,7 @@ int main() {
 #include <iostream>
 
 int add(int a, int b) {
-    return a + b;  // 計算結果を返す
+    return a + b;
 }
 
 int main() {
