@@ -12,8 +12,32 @@ C++の学習まとめ
 
 ### ・関数
 戻り値を返さない関数<br><br>
+```cpp
+#include <iostream>
 
+void hello() {
+    std::cout << "こんにちは！" << std::endl;
+}
+
+int main() {
+    hello();  // 関数を呼び出す
+    return 0;
+}
+```
 戻り値を返す関数<br><br>
+```cpp
+#include <iostream>
+
+int add(int a, int b) {
+    return a + b;  // 計算結果を返す
+}
+
+int main() {
+    int result = add(3, 5);
+    std::cout << "結果: " << result << std::endl;
+    return 0;
+}
+```
 [↑ 目次へ戻る](#toc)
 
 ## 参考文献
