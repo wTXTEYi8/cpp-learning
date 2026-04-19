@@ -93,7 +93,7 @@ int main() {
 }
 ```
 ### 構造体
-```
+```cpp
 #include <iostream>
 #include <string>
 
