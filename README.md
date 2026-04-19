@@ -105,15 +105,16 @@ struct Person {
 };
 
 int main() {
-    Person p = {"Taro", 20};
+    Person p;
+    p.name = "Taro";
+    p.age = 20;
     Person* ptr = &p;
 
-    std::cout << ptr->name << std::endl; 
-    std::cout << ptr->age << std::endl; 
+    std::cout << ptr->name << std::endl;
+    std::cout << ptr->age << std::endl;
 
     return 0;
 }
-
 ```
 [↑ 目次へ戻る](#toc)
 
