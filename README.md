@@ -10,6 +10,7 @@ C++の学習まとめ
    - [ビット演算子](#ビット演算子)
    - [シフト演算子](#シフト演算子)
 - [コンソールからの入力](#コンソールからの入力)
+- [構造体](#構造体)
 - [参考文献](#参考文献)
 
 ## 文法
@@ -91,7 +92,28 @@ int main() {
     return 0;
 }
 ```
+### 構造体
+```
+#include <iostream>
+#include <string>
 
+struct Person {
+    std::string name;
+    int age;
+};
+
+int main() {
+    Person p;
+    p.name = "Taro"; 
+    p.age = 20;
+
+    std::cout << p.name << " (" << p.age << ")" << std::endl;
+
+    return 0;
+}
+
+```
+[↑ 目次へ戻る](#toc)
 [↑ 目次へ戻る](#toc)
 ## 参考文献
 - 『独習C++ 新版』翔泳社<br><br>
