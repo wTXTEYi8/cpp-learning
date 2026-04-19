@@ -12,6 +12,7 @@ C++の学習まとめ
 - [コンソールからの入力](#コンソールからの入力)
 - [構造体](#構造体)
 - [クラス](#クラス)
+- [応用](#応用)
 - [参考文献](#参考文献)
 
 ## 文法
@@ -144,6 +145,38 @@ int main() {
 }
 ```
 [↑ 目次へ戻る](#toc)
+
+### 演算子
+```cpp
+#include <iostream>
+#include <termios.h>
+#include <unistd.h>
+
+char getch() {
+    termios oldt, newt;
+
+    tcgetattr(STDIN_FILENO, &oldt);
+    newt = oldt;
+
+    newt.c_lflag &= ~(ICANON | ECHO);
+    tcsetattr(STDIN_FILENO, TCSANOW, &newt);
+
+    char c = getchar();
+
+    tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
+
+    return c;
+}
+
+int main() {
+    std::cout << "キーを押してください: ";
+    char c = getch();
+    std::cout << "\n入力されたキー: " << c << std::endl;
+    return 0;
+}
+```
+[↑ 目次へ戻る](#toc)
+
 ## 参考文献
 - 『独習C++ 新版』翔泳社<br><br>
 [↑ 目次へ戻る](#toc)
