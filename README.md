@@ -29,7 +29,7 @@ int main() {
     return 0;
 }
 ```
--- 戻り値を返す関数<br><br>
+- 戻り値を返す関数<br><br>
 ```cpp
 #include <iostream>
 
