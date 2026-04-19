@@ -146,7 +146,7 @@ int main() {
 ```
 [↑ 目次へ戻る](#toc)
 
-### 演算子
+### 応用
 ```cpp
 #include <iostream>
 #include <termios.h>
