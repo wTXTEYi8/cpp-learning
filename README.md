@@ -119,7 +119,7 @@ int main() {
 ```
 [↑ 目次へ戻る](#toc)
 
-### ・クラス
+### クラス
 ```cpp
 #include <iostream>
 #include <string>
