@@ -94,6 +94,7 @@ int main() {
     return 0;
 }
 ```
+[↑ 目次へ戻る](#toc)
 ### 構造体
 ```cpp
 #include <iostream>
