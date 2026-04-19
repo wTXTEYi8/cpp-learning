@@ -103,7 +103,7 @@ struct Person {
 };
 
 int main() {
-    Person p;
+    Person p; 
     p.name = "Taro"; 
     p.age = 20;
 
