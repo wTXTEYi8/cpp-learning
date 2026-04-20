@@ -121,6 +121,19 @@ int main() {
 [↑ 目次へ戻る](#toc)
 
 ### ポインター
+```cpp
+#include <iostream>
+
+int main()
+{
+int num = 10;
+int *ptr;
+ptr = &num;
+std::cout << "ptr  : " << ptr << std::endl;
+std::cout << "num  : " << num << std::endl;
+std::cout << "&num : " << &num << std::endl;
+}
+```
 [↑ 目次へ戻る](#toc)
 
 ### クラス
