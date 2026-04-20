@@ -129,8 +129,8 @@ int main()
 int num = 10;
 int *ptr;
 ptr = &num;
-std::cout << "ptr  : " << ptr << std::endl;
 std::cout << "num  : " << num << std::endl;
+std::cout << "ptr  : " << ptr << std::endl;
 std::cout << "&num : " << &num << std::endl;
 }
 ```
