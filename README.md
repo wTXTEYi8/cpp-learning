@@ -69,7 +69,15 @@ int main() {
 | `\|` | OR（ビットごと） | `6 \| 3` | `7` |
 | `^` | XOR（排他的 OR） | `6 ^ 3` | `5` |
 | `~` | NOT（ビット反転） | `~6` | `-7` |
+```cpp
+#include <iostream>
+#include <bitset>
 
+int main(){
+std::bitset<4> b("1010");
+std::cout << b  << std::endl;
+}
+```
 
 <br>
 
