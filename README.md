@@ -82,7 +82,7 @@ int main() {
 #include <bitset>
 
 int main(){
-std::bitset<4> b("1010");
+std::bitset<4> b("1110");
 std::cout << b << std::endl;
 std::cout << (b << 2) << std::endl;
 std::cout << (b >> 2) << std::endl;
