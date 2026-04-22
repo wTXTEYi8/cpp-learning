@@ -71,6 +71,19 @@ int main() {
 | `~` | NOT（ビット反転） | `~6` | `-7` |
 <br>
 
+```cpp
+#include <iostream>
+#include <bitset>
+
+int main() {
+  int bit1 = 0b1110;
+  int bit2 = 0b1010;
+  std::bitset<4> a(bit1);
+  std::bitset<4> b(bit2);
+  std::cout << (a & b) << std::endl;
+}
+```
+
 ### シフト演算子
 | 演算子 | 説明 | 例 | 結果 |
 |--------|------|------|--------|
