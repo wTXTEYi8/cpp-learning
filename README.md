@@ -101,10 +101,11 @@ int main() {
 #include <bitset>
 
 int main(){
-std::bitset<4> b("1110");
-std::cout << b << std::endl;
-std::cout << (b << 2) << std::endl;
-std::cout << (b >> 2) << std::endl;
+    int bit = 0b1010;
+
+    std::bitset<4> b(bit);
+    std::cout << "b << 2 = " << (b << 2) << std::endl; // 1000
+    std::cout << "n >> 2 = " << (b >> 2) << std::endl; // 0010
 }
 ```
 
