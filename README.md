@@ -86,6 +86,7 @@ int main() {
     std::cout << "a | b = " << (a | b) << std::endl; // 1111
     std::cout << "a ^ b = " << (a ^ b) << std::endl; // 0101
     std::cout << "~a    = " << (~a) << std::endl;    // 0000
+    std::cout << "~b    = " << (~b) << std::endl;    // 0101
 }
 ```
 
