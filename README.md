@@ -80,7 +80,7 @@ int main() {
   int bit2 = 0b1010;
   std::bitset<4> a(bit1);
   std::bitset<4> b(bit2);
-  std::cout << (a & b) << std::endl;
+  std::cout << (a & b) << std::endl; // 1010
 }
 ```
 ```cpp
@@ -92,7 +92,7 @@ int main() {
   int bit2 = 0b1010;
   std::bitset<4> a(bit1);
   std::bitset<4> b(bit2);
-  std::cout << (a | b) << std::endl;
+  std::cout << (a | b) << std::endl; //1110
 }
 ```
 ### シフト演算子
