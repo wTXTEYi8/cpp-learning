@@ -76,25 +76,19 @@ int main() {
 #include <bitset>
 
 int main() {
-  int bit1 = 0b1110;
-  int bit2 = 0b1010;
-  std::bitset<4> a(bit1);
-  std::bitset<4> b(bit2);
-  std::cout << (a & b) << std::endl; // 1010
-}
-```
-```cpp
-#include <iostream>
-#include <bitset>
+    int bit1 = 0b1111;
+    int bit2 = 0b1010;
 
-int main() {
-  int bit1 = 0b1110;
-  int bit2 = 0b1010;
-  std::bitset<4> a(bit1);
-  std::bitset<4> b(bit2);
-  std::cout << (a | b) << std::endl; //1110
+    std::bitset<4> a(bit1);
+    std::bitset<4> b(bit2);
+
+    std::cout << "a & b = " << (a & b) << std::endl; // 1010
+    std::cout << "a | b = " << (a | b) << std::endl; // 1111
+    std::cout << "a ^ b = " << (a ^ b) << std::endl; // 0101
+    std::cout << "~a    = " << (~a) << std::endl;    // 0000
 }
 ```
+
 ### シフト演算子
 | 演算子 | 説明 | 例 | 結果 |
 |--------|------|------|--------|
