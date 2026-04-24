@@ -172,25 +172,25 @@ std::cout << "&num : " << &num << std::endl;
 #include <string>
 
 class Person {
-private:
-    std::string name;
-    int age;
+        std::string name;
+        int age;
 
 public:
-    void setData(std::string n, int a) {
-        name = n;
-        age = a;
-    }
+        void setData(std::string n, int a) {
+                name = n;
+                age = a;
+        }
 
-    void show() {
-        std::cout << name << " (" << age << ")" << std::endl;
-    }
+        void show() {
+                std::cout << "name : " << name << std::endl;
+                std::cout << "age : " << age << std::endl;
+        }
 };
 
 int main() {
-    Person p;
-    p.setData("Taro", 20);
-    p.show();
+        Person p;
+        p.setData("Taro", 20);
+        p.show();
 }
 ```
 [↑ 目次へ戻る](#toc)
