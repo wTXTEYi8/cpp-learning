@@ -160,7 +160,7 @@ int main() {
 
 int main(){
 int num = 10;
-int *ptr;
+int* ptr;
 ptr = &num;
 std::cout << "num  : " << num << std::endl;
 std::cout << "ptr  : " << ptr << std::endl;
