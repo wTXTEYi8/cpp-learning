@@ -165,7 +165,7 @@ ptr = &num;
 std::cout << "num  : " << num << std::endl;
 std::cout << "ptr  : " << ptr << std::endl;
 std::cout << "*ptr : " << *ptr << std::endl;
-std::cout << "&num : " << &num << std::endl;
+std::cout << "&num : " << &num << " 変数numのアドレス" << std::endl;
 }
 ```
 [↑ 目次へ戻る](#toc)
