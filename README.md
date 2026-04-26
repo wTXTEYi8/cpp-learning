@@ -13,6 +13,7 @@ C++の学習まとめ
   - [コンソールからの入力](#コンソールからの入力)
   - [構造体](#構造体)
   - [クラス](#クラス)
+  - [getterとsetter](#getterとsetter)
   - [コンストラクター](#コンストラクター)
   - [デストラクター](#デストラクター)
 - [応用](#応用)
@@ -195,6 +196,58 @@ int main() {
         Person p;
         p.setData("Taro", 20);
         p.show();
+}
+```
+[↑ 目次へ戻る](#toc)
+
+### getterとsetter
+```cpp
+#include <iostream>
+
+class person
+{
+        std::string address;
+        int age;
+
+        public:
+        std::string get_address();
+        void set_address(std::string new_address);
+
+        int get_age();
+        void set_age(int new_age);
+};
+
+std::string person::get_address()
+{
+        return address;
+}
+
+void person::set_address(std::string new_address)
+{
+        address = new_address;
+}
+
+int person::get_age()
+{
+        return age;
+}
+
+void person::set_age(int new_age)
+{
+        age = new_age;
+}
+
+int main()
+{
+        person takashi;
+
+        takashi.set_address("TOKYO");
+        takashi.set_age(20);
+
+        person* ptr = &takashi;
+
+        std::cout << "住所: " << ptr->get_address() << std::endl;
+        std::cout << "年齢: " << ptr->get_age() << std::endl;
 }
 ```
 [↑ 目次へ戻る](#toc)
