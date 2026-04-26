@@ -147,8 +147,8 @@ int main() {
     p.age = 20;
     Person* ptr = &p;
 
-    std::cout << ptr->name << std::endl;
-    std::cout << ptr->age << std::endl;
+    std::cout << "名前: " <<  ptr->name << std::endl;
+    std::cout << "年齢: " << ptr->age << std::endl;
 
     return 0;
 }
@@ -168,8 +168,8 @@ int main() {
     p.name = "Taro";
     p.age = 20;
 
-    std::cout << p.name << std::endl;
-    std::cout << p.age << std::endl;
+    std::cout << "名前: " << p.name << std::endl;
+    std::cout << "年齢: " << p.age << std::endl;
 
     return 0;
 }
