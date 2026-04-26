@@ -153,6 +153,28 @@ int main() {
     return 0;
 }
 ```
+
+```cpp
+#include <iostream>
+#include <string>
+
+struct Person {
+    std::string name;
+    int age;
+};
+
+int main() {
+    Person p;
+    p.name = "Taro";
+    p.age = 20;
+
+    std::cout << p.name << std::endl;
+    std::cout << p.age << std::endl;
+
+    return 0;
+}
+```
+
 [↑ 目次へ戻る](#toc)
 
 ### ポインター
