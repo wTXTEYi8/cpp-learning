@@ -328,7 +328,7 @@ int LSB(int n) {
 int main() {
         int n = 10;
 
-        std::cout << "-n : " << LSB(n) << std::endl;
+        std::cout << "LSB : " << LSB(n) << std::endl;
 }
 ```
 [↑ 目次へ戻る](#toc)
