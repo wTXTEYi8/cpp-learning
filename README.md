@@ -18,6 +18,7 @@ C++の学習まとめ
   - [デストラクター](#デストラクター)
 - [応用](#応用)
   - [フラグ管理](#フラグ管理)
+  - [LSB](#LSB)
 - [参考文献](#参考文献)
 
 ## 文法
@@ -313,6 +314,23 @@ int main() {
 [↑ 目次へ戻る](#toc)
 
 ### フラグ管理
+[↑ 目次へ戻る](#toc)
+
+### LSB
+```cpp
+#include <iostream>
+#include <bitset>
+
+int LSB(int n) {
+        return n & -n;
+}
+
+int main() {
+        int n = 10;
+
+        std::cout << "-n : " << LSB(n) << std::endl;
+}
+```
 [↑ 目次へ戻る](#toc)
 
 ## 参考文献
