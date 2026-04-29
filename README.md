@@ -332,6 +332,7 @@ int main() {
         std::cout << b << std::endl; // 11111111111111111111111111110110
 }
 ```
+1になっている一番下の桁
 ```cpp
 #include <iostream>
 #include <bitset>
