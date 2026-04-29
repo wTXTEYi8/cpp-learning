@@ -358,8 +358,3 @@ int main() {
 ## 参考文献
 - 『独習C++ 新版』翔泳社<br><br>
 [↑ 目次へ戻る](#toc)
-```math
-\lim_{x \to \infty} f(x) \
-\lim_{h \to 0} \frac{f(x+h)-f(x)}{h} \
-\lim_{\substack{x \to \infty \ y \to \infty}} f(x,y)
-```
