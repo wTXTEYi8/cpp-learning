@@ -190,7 +190,7 @@ ptr = &num;
 std::cout << "num  : " << num << std::endl;
 std::cout << "ptr  : " << ptr << std::endl;
 std::cout << "*ptr : " << *ptr << std::endl;
-std::cout << "&num : " << &num << " 変数numのアドレス" << std::endl;
+std::cout << "&num : " << &num << std::endl; // 変数numのアドレス
 }
 ```
 [↑ 目次へ戻る](#toc)
@@ -317,6 +317,21 @@ int main() {
 [↑ 目次へ戻る](#toc)
 
 ### LSB
+```cpp
+#include <iostream>
+#include <bitset>
+
+int main() {
+        int n = 10;
+        int m = -10;
+
+        std::bitset<32> a(n);
+        std::bitset<32> b(m);
+
+        std::cout << a << std::endl; // 00000000000000000000000000001010
+        std::cout << b << std::endl; // 11111111111111111111111111110110
+}
+```
 ```cpp
 #include <iostream>
 #include <bitset>
