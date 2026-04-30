@@ -337,8 +337,7 @@ int main() {
 | `1110` | -2 |
 | `1111` | -1 |
 
-
-LSBの求め方
+LSB(Least Significant Bit)の求め方
 ```cpp
 #include <iostream>
 #include <bitset>
