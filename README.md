@@ -363,6 +363,21 @@ int main() {
 [↑ 目次へ戻る](#toc)
 
 ### bit全探索
+```cpp
+#include <iostream>
+#include <vector>
+#include <bitset>
+using namespace std;
+
+int main() {
+    int n = 5;
+
+    for (int bit = 0; bit < (1<<n); ++bit)
+    {
+        cout << bit << " : " << bitset<32>(bit) << endl;
+    }
+}
+```
 [↑ 目次へ戻る](#toc)
 
 ## 参考文献
